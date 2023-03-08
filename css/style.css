@@ -1,0 +1,115 @@
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 500px 5px black inset;
+  /* background-image: linear-gradient(rgb(46, 46, 46), rgb(88, 47, 161)); */
+}
+
+body {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: linear-gradient(rgb(46, 46, 46), rgb(88, 47, 161));
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main {
+  width: auto;
+  font-family: "Arima Madurai", cursive;
+  background-color: rgba(63, 125, 142, 0);
+  margin: auto;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  color: antiquewhite;
+}
+
+#results {
+  width: auto;
+  background-color: rgba(175, 184, 185, 0);
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.result-card {
+  width: 360px;
+  height: 540px;
+  background-position: center;
+  background-size: cover;
+  /* background-image: repeating-conic-gradient(
+    rgba(255, 255, 255, 0.1) 10%,
+    rgba(0, 0, 0, 0.1) 20%,
+    rgba(255, 255, 255, 0.1) 10%
+  ); */
+  opacity: 80%;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 50pxpx;
+  display: table;
+  table-layout: fixed;
+  box-shadow: 0 0 2px 0.2px rgb(250, 244, 244),
+    0 0 100px 10px rgba(0, 0, 0, 1) inset;
+  transition: box-shadow 2s, border-radius 1s;
+}
+
+.result-card:hover {
+  box-shadow: 0 0 2px 0.11px rgb(250, 244, 244), 0 0 100px 100px black inset;
+  border-radius: 40px;
+}
+
+.text {
+  display: table-row;
+  vertical-align: bottom;
+  text-align: center;
+  -webkit-text-stroke: 0.03em black;
+}
+
+.card-image {
+  border-radius: 10px;
+  width: 280px;
+}
+
+.view-show {
+  color: white;
+}
+
+::-webkit-scrollbar {
+  background-image: linear-gradient(rgba(46, 46, 46, 1), rgba(88, 47, 161, 1));
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 5px;
+  box-shadow: 0 0 1px 0.05px rgba(255, 255, 255, 1),
+    0 0 10px 1px rgba(0, 0, 0, 0.5) inset;
+}
+
+#searchbar {
+  width: 300px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5) inset;
+  font-size: 1.2em;
+}
+#submit {
+  font-size: 1em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  border-width: 0px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5) inset,
+    0 0 2px 0.1px rgb(250, 244, 244);
+}
